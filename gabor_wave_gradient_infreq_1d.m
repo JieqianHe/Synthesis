@@ -1,7 +1,7 @@
 %This function computes the gradient of X_tilda and update it to make
 %wavelet coefficients more close to Sx(wavelet coefficient of x)
 %Compute gradient in frequency
-function [f, g] = gabor_wave_gradient2_1d(X_tilda, Sx, psi, psi_hat)
+function [f, g] = gabor_wave_gradient_infreq_1d(X_tilda, Sx, psi, psi_hat)
 
 N = length(X_tilda);
 nS = size(psi_hat,2);
