@@ -55,7 +55,7 @@ fun = @(X_tilda)gabor_wave_diff_1d(X_tilda, Sx, g_hat);
 
 for ind = 1:length(S)
     %fun = @(X_tilda)gabor_wave_diff_1d(X_tilda, [Sx(1:ind);Sx(end)], g_hat(:,1:ind));
-    fun = @(X_tilda)gabor_wave_gradient2_1d(X_tilda, [Sx(1:ind);Sx(end)], ...
+    fun = @(X_tilda)gabor_wave_gradient_infreq_1d(X_tilda, [Sx(1:ind);Sx(end)], ...
         g(:,1:ind), g_hat(:,1:ind));
     SX_bar{ind} = scattering_gabor_infreq_1d(X0, g_hat(:,1:ind));
     c = 0;
