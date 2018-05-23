@@ -1,4 +1,4 @@
-# Synthesis
+# Synthesis in 1D
 
 MATLAB implementation for signal synthesis. Currently working on 1D signal with 1st order scattering coefficients.
 
